@@ -1,0 +1,25 @@
+#notice, name cannot contain underscore
+name: unabto-test
+version: 0.1
+summary: some text
+description: some description
+vendor: mt@nabto.com
+architecture: armhf
+icon: icon.jpeg
+
+build-packages: [openssl, cmake, git]
+
+binaries:
+  # note, the name to write for
+  # executing the binary below it. These two names cannot
+  # be the same !
+  unabto:
+    exec: bin/unabto_raspberrypi
+    # We have to allow the pc_demo binary to open
+    # sockets and the like. For this, we use plugs
+    plugs: [network-bind]
+
+parts:
+  unabto:
+    plugin: cmake
+    source: git://github.com/nabto/unabto.git

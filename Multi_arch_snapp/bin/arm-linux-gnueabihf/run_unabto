@@ -1,0 +1,7 @@
+#!/bin/bash
+
+parent_path=$( cd "$(dirname "${BASH_SOURCE}")" ; pwd -P )
+
+cd "$parent_path"
+
+sudo LD_LIBRARY_PATH=../../lib/arm-linux-gnueabihf ./unabto "$@"
