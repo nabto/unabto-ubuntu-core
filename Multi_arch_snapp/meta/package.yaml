@@ -3,7 +3,7 @@ vendor: mt@nabto.com
 summary: Remote control embedded devices directly from HTML, or stream data directly to and from devices, securely.
 description: Remote control embedded devices directly from HTML. Or stream data directly to and from devices. Securely. No firewall hassle.
 architecture: [amd64, armhf]
-icon: meta/icon.jpeg
+icon: meta/icon.png
 version: 0.1
 
 binaries:
